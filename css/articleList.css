@@ -1,0 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+SC');
+
+footer,#contact,#top_nav{
+    background: rgba(55,94,151,0.95);
+}
