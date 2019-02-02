@@ -31,9 +31,9 @@ footer,#contact,#top_nav{
 #article_abstract{
     width: 60%;
     padding: 1%;
-    border-radius: 1rem;
-    background: #b9b5c7;
+    border-left: 3px solid rgb(251,101,66);
     font-size: 1.7rem;
+    color: #7a7a7a;
     margin-top: 1.5rem;
     line-height: 2.3rem;
 }

@@ -6,17 +6,49 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/navs.css">
     <link rel="stylesheet" href="css/articleList.css">
+    <script src="js/articleList.js"></script>
 </head>
 <body>
 <div id="top_nav">
-    <a class="top_nav_item">HOME</a>
-    <a class="top_nav_item">ARTICLES</a>
-    <a class="top_nav_item">PHOTOS</a>
-    <a class="top_nav_item">ABOUT ME</a>
+    <a class="top_nav_item" href="main.html">HOME</a>
+    <a class="top_nav_item" href="articleList.html">ARTICLES</a>
+    <a class="top_nav_item" href="gallery.html">PHOTOS</a>
+    <a class="top_nav_item" href="AboutMe-EN.html">ABOUT ME</a>
     <img id="login" src="resources/img/defaulut_login.png"/>
 </div>
-<div id="side_nav"></div>
 
+<div id="main_container">
+    <div id="catalogs">
+        <div class="list_block">
+            <div class="list_title">
+                Filter By Time
+            </div>
+            <div class="list_choices">
+                <a class="choice">Jan 2019 (5)</a>
+                <a class="choice">Jan 2017 (5)</a>
+                <a class="choice">Feb 2019 (5)</a>
+                <a class="choice">Jan 2019 (5)</a>
+                <a class="choice">Dec 2019 (5)</a>
+                <a class="choice">Jan 2019 (5)</a>
+            </div>
+        </div>
+        <div class="list_block">
+            <div class="list_title">
+                Filter By Type
+            </div>
+            <div class="list_choices">
+            </div>
+        </div>
+    </div>
+    <div id="listContainer">
+        <div id="current_cata">ALL ARTICLES</div>
+        <div id="items_container">
+            <div id="article_item"></div>
+        </div>
+        <div id="last_page">LAST PAGE</div>
+        <div id="next_page">NEXT PAGE</div>
+    </div>
+</div>
 
 <!-- below is the footer for website -->
 <div id="contact">

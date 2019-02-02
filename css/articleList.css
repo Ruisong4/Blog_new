@@ -1,5 +1,77 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+SC');
+@import url('https://fonts.googleapis.com/css?family=Staatliches');
 
 footer,#contact,#top_nav{
     background: rgba(55,94,151,0.95);
+}
+
+body{
+    background: #FAFBFF;
+}
+
+#main_container{
+    padding: 0;
+    margin: 15rem auto;
+    width: 70%;
+}
+
+#catalogs{
+    display: inline-block;
+    border-radius: 0.5rem;
+    width: 20%;
+}
+
+.list_block{
+    width: 100%;
+    background: rgb(55,94,151);
+    color: #FFFFFF;
+    font-family: Staatliches;
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: center;
+    height: auto;
+}
+
+.list_block:not(:first-child){
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.list_choices{
+    border: 2px solid rgb(55,94,151);
+    width: 100%;
+}
+
+.choice{
+    background: #FFFFFF;
+    color: #000;
+    text-align: center;
+    font-size: 2rem;
+    height: 4rem;
+    line-height: 4rem;
+    display: block;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.choice:hover{
+    background: rgb(55,94,151);
+    font-size: 2.5rem;
+}
+
+#listContainer{
+    display: inline-block;
+    margin-left: 5%;
+    width: 70%;
+    height: 500px;
+    background: #2f6627;
+}
+
+
+#current_cata{
+    font-family: Staatliches;
+    color: #000;
+    font-size: 2rem;
+    line-height: 6rem;
+    margin-top: -6rem;
 }
