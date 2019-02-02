@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe');
 
 /**
+the photo is sized by 1463*837
+otherwise, it might cause problem on style
+**/
+
+/**
 styles for mobile devices, phones
 **/
 @media (max-width: 544px) {
