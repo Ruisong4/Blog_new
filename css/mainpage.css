@@ -32,7 +32,7 @@ styles for mobile devices, phones
         text-align: center;
     }
     header:before {
-        background: linear-gradient(rgba(0, 235, 235, 0.7), rgba(0, 235, 235, 0.7)), url("../resources/img/santamonica.jpg");
+        background: linear-gradient(rgba(0, 235, 235, 0.7), rgba(0, 235, 235, 0.7)), url("../resources/img/static_resources/santamonica.jpg");
         background-color: #CCCCCC;
         background-attachment: fixed;
         background-position: center center;
@@ -269,13 +269,13 @@ styles for non mobile devices
 **/
 @media (min-width: 544px){
     html, body {
-        color: #999999;
-        font-family: Staatliches;
-        font-size: 10px;
-        font-weight: 100;
-        margin: 0;
-        padding: 0;
-    }
+          color: #999999;
+          font-family: Staatliches;
+          font-size: 10px;
+          font-weight: 100;
+          margin: 0;
+          padding: 0;
+      }
 
     .container {
         margin: 0 auto;
@@ -290,7 +290,7 @@ styles for non mobile devices
         text-align: center;
     }
     header:before {
-        background: linear-gradient(rgba(0, 235, 235, 0.7), rgba(0, 235, 235, 0.7)), url("../resources/img/santamonica.jpg");
+        background: linear-gradient(rgba(0, 235, 235, 0.7), rgba(0, 235, 235, 0.7)), url("../resources/img/static_resources/santamonica.jpg");
         background-color: #CCCCCC;
         background-attachment: fixed;
         background-position: center center;

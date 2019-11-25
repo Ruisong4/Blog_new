@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Staatliches');
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe');
+
+@media (max-width: 544px) {
+    a {
+        text-decoration: none;
+    }
+
+    html, body {
+        color: #999999;
+        font-family: Staatliches;
+        font-size: 10px;
+        font-weight: 100;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        background: rgba(223, 228, 235, 0.7);
+    }
+
+    body {
+        padding-top: 10%;
+    }
+
+    #choices {
+        height: 60%;
+        width: 100%;
+    }
+
+    .info_block {
+        background-size: cover;
+        background-position: center;
+        float: left;
+        height: 40%;
+        width: 75%;
+        margin-left: 12.5%;
+        margin-top: 10%;
+        display: block;
+        border-radius: 8%;
+        border-collapse: separate;
+        box-sizing: border-box;
+        padding: 2% 2%;
+        color: #5f005f;
+    }
+
+    .text_container {
+        color: #5f005f;
+        padding-top: 10%;
+        box-sizing: border-box;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(223, 228, 235, 0.9);
+        border-radius: 8%;
+        transition: 0.3s;
+    }
+
+    #to_resume {
+        background: url("../resources/img/static_resources/resume_background.svg");
+    }
+
+    #to_online {
+        background: url("../resources/img/static_resources/aboutme_background.svg");
+    }
+
+    .text_title {
+        width: 100%;
+        text-align: center;
+        line-height: 8.5vw;
+        font-size: 8vw;
+    }
+
+    .text_content {
+        margin: 0 auto;
+        width: 80%;
+        text-align: center;
+        line-height: 4.5vw;
+        font-size: 4vw;
+    }
+
+    #to_home {
+        height: 5%;
+        width: 100%;
+        text-align: center;
+        font-size: 6vw;
+        color: black;
+        display: inline-block;
+        margin: 3% auto;
+    }
+}
+
+@media (min-width: 544px) {
+    a {
+        text-decoration: none;
+    }
+
+    html, body {
+        color: #999999;
+        font-family: Staatliches;
+        font-size: 10px;
+        font-weight: 100;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        background: rgba(223, 228, 235, 0.7);
+    }
+
+    body {
+        padding-top: 10%;
+    }
+
+    #choices {
+        height: 50%;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .info_block_desktop {
+        background-size: cover;
+        background-position: center;
+        float: left;
+        height: 78%;
+        width: 45%;
+        display: inline-block;
+        border-radius: 5%;
+        border-collapse: separate;
+        box-sizing: border-box;
+        padding: 1% 1%;
+    }
+
+    .text_container {
+        padding-top: 10%;
+        box-sizing: border-box;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(223, 228, 235, 0.9);
+        border-radius: 5%;
+        transition: 0.3s;
+    }
+
+    .text_container:hover {
+        background-color: rgba(223, 228, 235, 0);
+    }
+    .text_container:hover .clip1{
+        color: #FFFFFF;
+        background: #ffffff;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+
+    .text_container:hover .clip2{
+        color: #FFFFFF;
+        background: #ffffff;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+
+    #to_resume {
+        background: url("../resources/img/static_resources/resume_background.svg");
+    }
+
+    #to_online {
+        background: url("../resources/img/static_resources/aboutme_background.svg");
+        margin-left: 10%;
+    }
+
+    .text_title {
+        width: 100%;
+        text-align: center;
+        line-height: 3vw;
+        font-size: 2.5vw;
+    }
+
+    .text_content {
+        margin: 0 auto;
+        width: 80%;
+        text-align: center;
+        line-height: 1.8vw;
+        font-size: 1.2vw;
+    }
+
+    #to_home {
+        height: 15%;
+        width: 100%;
+        text-align: center;
+        font-size: 2vw;
+        color: black;
+        display: inline-block;
+        margin: 0 auto;
+    }
+}

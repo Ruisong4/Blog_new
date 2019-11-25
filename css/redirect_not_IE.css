@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Staatliches');
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe');
+
+@media (max-width: 544px) {
+}
+
+@media (min-width: 544px) {
+    .clip1 {
+        background: url("../resources/img/static_resources/aboutme_background.svg") no-repeat;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-size: cover;
+    }
+
+    .clip2 {
+        background: url("../resources/img/static_resources/aboutme_background.svg") no-repeat;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-size: cover;
+    }
+}
