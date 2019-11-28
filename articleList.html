@@ -2,200 +2,208 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Title</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/navs.css">
     <link rel="stylesheet" href="css/articleList.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/articleList.js"></script>
+    <script src="js/nav.js"></script>
 </head>
 <body>
-<div id="top_nav">
-    <a class="top_nav_item" href="main.html">HOME</a>
-    <a class="top_nav_item" href="articleList.html">ARTICLES</a>
-    <a class="top_nav_item" href="gallery.html">PHOTOS</a>
-    <a class="top_nav_item" href="AboutMe-EN.html">ABOUT ME</a>
-    <img id="login" src="resources/img/static_resources/defaulut_login.png"/>
+<div id="mask" class="mobile_item"></div>
+<div>
+    <div id="top_nav">
+        <div class="top_nav_item mobile_item">ARTICLES<i class="arrow up"></i><i class="arrow down"></i></div>
+        <a class="top_nav_item" href="main.html">HOME</a>
+        <a class="top_nav_item" href="articleList.html">ARTICLES</a>
+        <a class="top_nav_item" href="gallery.html">PHOTOS</a>
+        <a class="top_nav_item" href="redirect.html">ABOUT ME</a>
+        <img id="login" class="desktop_item" src="resources/img/static_resources/defaulut_login.png"/>
+        <a class="top_nav_item mobile_item" href="control.html">LOG IN</a>
+    </div>
+
+    <div id="main_container">
+        <div id="catalogs">
+            <div class="list_block">
+                <div class="list_title">
+                    Filter By Time
+                </div>
+                <div class="list_choices">
+                    <a class="choice">Jan 2019 (5)</a>
+                    <a class="choice">Jan 2017 (5)</a>
+                    <a class="choice">Feb 2019 (5)</a>
+                    <a class="choice">Jan 2019 (5)</a>
+                    <a class="choice">Dec 2019 (5)</a>
+                    <a class="choice">Jan 2019 (5)</a>
+                </div>
+            </div>
+            <div class="list_block">
+                <div class="list_title">
+                    Filter By Type
+                </div>
+                <div class="list_choices">
+                    <a class="choice">Jan 2019 (5)</a>
+                    <a class="choice">Jan 2017 (5)</a>
+                    <a class="choice">Feb 2019 (5)</a>
+                    <a class="choice">Jan 2019 (5)</a>
+                    <a class="choice">Dec 2019 (5)</a>
+                    <a class="choice">Jan 2019 (5)</a>
+                </div>
+            </div>
+        </div>
+        <div id="listContainer">
+            <div id="current_cata">ALL ARTICLES</div>
+            <div id="items_container">
+                <div class="article_item">
+                    <div class="article_title">这是文章的标题</div>
+                    <div class="article_abs">
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                    </div>
+                    <div class="img_wrapper">
+                        <img src="resources/img/static_resources/version_2017.png" class="article_img">
+                    </div>
+                    <div class="article_info">UPLOAD AT : 2017 Jan 17</div>
+                </div>
+                <div class="article_item">
+                    <div class="article_title">这是文章的标题</div>
+                    <div class="article_abs">
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                    </div>
+                    <div class="img_wrapper">
+                        <img src="resources/img/static_resources/version_2017.png" class="article_img" alt="">
+                    </div>
+                    <div class="article_info">UPLOAD AT : 2017 Jan 17</div>
+                </div>
+                <div class="article_item">
+                    <div class="article_title">这是文章的标题</div>
+                    <div class="article_abs">
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                    </div>
+                    <div class="img_wrapper">
+                        <img src="resources/img/static_resources/version_2017.png" class="article_img">
+                    </div>
+                    <div class="article_info">UPLOAD AT : 2017 Jan 17</div>
+                </div>
+                <div class="article_item">
+                    <div class="article_title">这是文章的标题</div>
+                    <div class="article_abs">
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                    </div>
+                    <div class="img_wrapper">
+                        <img src="resources/img/static_resources/version_2017.png" class="article_img">
+                    </div>
+                    <div class="article_info">UPLOAD AT : 2017 Jan 17</div>
+                </div>
+                <div class="article_item">
+                    <div class="article_title">这是文章的标题</div>
+                    <div class="article_abs">
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                        这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
+                    </div>
+                    <div class="img_wrapper">
+                        <img src="resources/img/static_resources/version_2017.png" class="article_img">
+                    </div>
+                    <div class="article_info">UPLOAD AT : 2017 Jan 17</div>
+                </div>
+            </div>
+            <div id="turn_page">
+                <a id="last_page" class="disable_turning">LAST PAGE</a>
+                <a id="next_page">NEXT PAGE</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- below is the footer for website -->
+    <div id="contact">
+        <div class="contact_block">
+            <h3 id="contact_title">Contact Me</h3>
+            <textarea id="contact_input"></textarea>
+            <div id="contact_submit">send</div>
+        </div>
+        <div class="contact_block">
+            <a  href="AboutMe-EN.html" class="bottom_links">About Me</a>
+
+            <a  href="gallery.html" class="bottom_links">Photo gallery</a>
+
+            <a  href="articles.html" class="bottom_links">Blog Post</a>
+
+            <a  href="#" class="bottom_links">About the website</a>
+
+            <a href="javascript:alert(`can not believe you did not notice it is just on your left`);" class="bottom_links">Contact Me</a>
+        </div>
+    </div>
+    <footer>designed by Ruisong,Li copyright © 2019 Ruisong Li</footer>
 </div>
-
-<div id="main_container">
-    <div id="catalogs">
-        <div class="list_block">
-            <div class="list_title">
-                Filter By Time
-            </div>
-            <div class="list_choices">
-                <a class="choice">Jan 2019 (5)</a>
-                <a class="choice">Jan 2017 (5)</a>
-                <a class="choice">Feb 2019 (5)</a>
-                <a class="choice">Jan 2019 (5)</a>
-                <a class="choice">Dec 2019 (5)</a>
-                <a class="choice">Jan 2019 (5)</a>
-            </div>
-        </div>
-        <div class="list_block">
-            <div class="list_title">
-                Filter By Type
-            </div>
-            <div class="list_choices">
-                <a class="choice">Jan 2019 (5)</a>
-                <a class="choice">Jan 2017 (5)</a>
-                <a class="choice">Feb 2019 (5)</a>
-                <a class="choice">Jan 2019 (5)</a>
-                <a class="choice">Dec 2019 (5)</a>
-                <a class="choice">Jan 2019 (5)</a>
-            </div>
-        </div>
-    </div>
-    <div id="listContainer">
-        <div id="current_cata">ALL ARTICLES</div>
-        <div id="items_container">
-            <div class="article_item">
-                <div class="article_title">这是文章的标题</div>
-                <div class="article_abs">
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                </div>
-                <div class="img_wrapper">
-                    <img src="resources/img/static_resources/version_2017.png" class="article_img">
-                </div>
-                <div class="article_info">UPLOAD AT : 2017 Jan 17</div>
-            </div>
-            <div class="article_item">
-                <div class="article_title">这是文章的标题</div>
-                <div class="article_abs">
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                </div>
-                <div class="img_wrapper">
-                    <img src="resources/img/static_resources/version_2017.png" class="article_img" alt="">
-                </div>
-                <div class="article_info">UPLOAD AT : 2017 Jan 17</div>
-            </div>
-            <div class="article_item">
-                <div class="article_title">这是文章的标题</div>
-                <div class="article_abs">
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                </div>
-                <div class="img_wrapper">
-                    <img src="resources/img/static_resources/version_2017.png" class="article_img">
-                </div>
-                <div class="article_info">UPLOAD AT : 2017 Jan 17</div>
-            </div>
-            <div class="article_item">
-                <div class="article_title">这是文章的标题</div>
-                <div class="article_abs">
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                </div>
-                <div class="img_wrapper">
-                    <img src="resources/img/static_resources/version_2017.png" class="article_img">
-                </div>
-                <div class="article_info">UPLOAD AT : 2017 Jan 17</div>
-            </div>
-            <div class="article_item">
-                <div class="article_title">这是文章的标题</div>
-                <div class="article_abs">
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                    这是文章的简介部分，我们可以通过Jcrop来在线裁剪图片
-                </div>
-                <div class="img_wrapper">
-                    <img src="resources/img/static_resources/version_2017.png" class="article_img">
-                </div>
-                <div class="article_info">UPLOAD AT : 2017 Jan 17</div>
-            </div>
-        </div>
-        <div id="turn_page">
-            <a id="last_page" class="disable_turning">LAST PAGE</a>
-            <a id="next_page">NEXT PAGE</a>
-        </div>
-    </div>
-</div>
-
-<!-- below is the footer for website -->
-<div id="contact">
-    <div class="contact_block">
-        <h3 id="contact_title">Contact Me</h3>
-        <textarea id="contact_input"></textarea>
-        <div id="contact_submit">send</div>
-    </div>
-    <div class="contact_block">
-        <a  href="AboutMe-EN.html" class="bottom_links">About Me</a>
-
-        <a  href="gallery.html" class="bottom_links">Photo gallery</a>
-
-        <a  href="articles.html" class="bottom_links">Blog Post</a>
-
-        <a  href="#" class="bottom_links">About the website</a>
-
-        <a href="javascript:alert(`can not believe you did not notice it is just on your left`);" class="bottom_links">Contact Me</a>
-    </div>
-</div>
-<footer>designed by Ruisong,Li copyright © 2019 Ruisong Li</footer>
 </body>
 </html>

@@ -6,14 +6,19 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/navs.css">
     <link rel="stylesheet" href="css/articles.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/nav.js"></script>
 </head>
 <body>
+<div id="mask" class="mobile_item"></div>
 <div id="top_nav">
+    <div class="top_nav_item mobile_item">ARTICLE<i class="arrow up"></i><i class="arrow down"></i></div>
     <a class="top_nav_item" href="main.html">HOME</a>
     <a class="top_nav_item" href="articleList.html">ARTICLES</a>
     <a class="top_nav_item" href="gallery.html">PHOTOS</a>
     <a class="top_nav_item" href="AboutMe-EN.html">ABOUT ME</a>
-    <img id="login" src="resources/img/static_resources/defaulut_login.png"/>
+    <img id="login" class="desktop_item" src="resources/img/static_resources/defaulut_login.png"/>
+    <a class="top_nav_item mobile_item" href="control.html">LOG IN</a>
 </div>
 <div id="side_nav"></div>
 <div id="article_container">

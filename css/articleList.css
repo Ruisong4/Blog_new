@@ -2,11 +2,18 @@
 @import url('https://fonts.googleapis.com/css?family=Staatliches');
 
 @media (max-width: 544px){
-    footer,#contact,#top_nav{
+    footer,#contact{
         background: rgba(55,94,151,0.95);
+    }
+    #top_nav {
+        background-color: #4270fb;
+    }
+    .top_nav_item:first-child{
+        background: rgba(55,94,151,1);
     }
 }
 @media (min-width: 544px) {
+
     footer, #contact, #top_nav {
         background: rgba(55, 94, 151, 0.95);
     }
