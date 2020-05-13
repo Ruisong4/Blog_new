@@ -1,3 +1,30 @@
-body, html{
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+SC:400,700');
+@import url('https://fonts.googleapis.com/css?family=Staatliches');
 
+@media (max-width: 544px){
+    footer,#contact{
+        background: RGBA(63,104,28, 0.95);
+    }
+    #top_nav {
+        background-color: #3F681C;
+    }
+    .top_nav_item:first-child{
+        background: RGBA(63,104,28, 1);
+    }
+
+    #carousel_container {
+        height:100vh;
+        width: 100%;
+        padding-top: 6rem;
+        box-sizing: border-box;
+    }
+}
+@media (min-width: 544px) {
+    footer, #contact, #top_nav {
+        background: #3F681C;
+    }
+
+    body {
+        background: #FAFBFF;
+    }
 }

@@ -454,6 +454,8 @@ styles for non mobile devices
         display: inline-block;
         margin-top: 3rem;
         border-radius: 2%;
+        height:30rem;
+        object-fit: cover;
     }
 
     .photo_block:nth-child(even){

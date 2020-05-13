@@ -3,9 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <title>小白菜的相册</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/navs.css">
     <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" type="text/css" href="library/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="library/slick/slick-theme.css"/>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="library/slick/slick.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/gallery.js"></script>
 </head>
 <body>
+<div>
+    <div id="top_nav">
+        <div class="top_nav_item mobile_item">ARTICLES<i class="arrow up"></i><i class="arrow down"></i></div>
+        <a class="top_nav_item" href="main.html">HOME</a>
+        <a class="top_nav_item" href="articleList.html">ARTICLES</a>
+        <a class="top_nav_item" href="gallery.html">PHOTOS</a>
+        <a class="top_nav_item" href="redirect.html">ABOUT ME</a>
+        <img id="login" class="desktop_item" src="resources/img/static_resources/defaulut_login.png"/>
+        <a class="top_nav_item mobile_item" href="control.html">LOG IN</a>
+    </div>
+    <div id="carousel_container">
 
+    </div>
+    <!-- below is the footer for website -->
+    <div id="contact">
+        <div class="contact_block">
+            <h3 id="contact_title">Contact Me</h3>
+            <textarea id="contact_input"></textarea>
+            <div id="contact_submit">send</div>
+        </div>
+        <div class="contact_block">
+            <a  href="AboutMe-EN.html" class="bottom_links">About Me</a>
+
+            <a  href="gallery.html" class="bottom_links">Photo gallery</a>
+
+            <a  href="articles.html" class="bottom_links">Blog Post</a>
+
+            <a  href="#" class="bottom_links">About the website</a>
+
+            <a href="javascript:alert(`can not believe you did not notice it is just on your left`);" class="bottom_links">Contact Me</a>
+        </div>
+    </div>
+    <footer>designed by Ruisong,Li copyright © 2019 Ruisong Li</footer>
+</div>
 </body>
+
 </html>
