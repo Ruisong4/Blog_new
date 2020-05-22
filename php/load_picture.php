@@ -1,7 +1,10 @@
 <?php
-
-$dir = "../resources/img/static_resources";
-//扫描文件夹
-$file = scandir($dir);
-//显示
-echo json_encode($file);
+    include('connect.php');
+    mysqli_set_charset($conn,"utf8");
+    $sql = "SELECT * FROM gallery ORDER BY time";
+    $result = $conn->query($sql);
+    $array = array();
+    while($row = mysqli_fetch_assoc($result)) {
+        $array[] = $row;
+    }
+    print(json_encode($array));

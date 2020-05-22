@@ -64,7 +64,7 @@
         left: 0;
         top: 0;
         width: 100%;
-        z-index: 15;
+        z-index: 15 !important;
     }
 
     .top_nav_item:not(:first-child) {
@@ -157,6 +157,7 @@
         height: 6rem;
         position: fixed;
         top: 0;
+        z-index: 15 !important;
     }
 
     .top_nav_item {
